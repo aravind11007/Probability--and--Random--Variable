@@ -1,0 +1,126 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+
+\title{\textbf{Assignment 3--probability and Random Variable}}
+\author{Aravind--BM19MTECH11007}
+\date{\today}
+\onehalfspacing
+
+\begin{document}
+
+\maketitle
+\textbf{problem statement:} Suppose we have four box A,B,C and D containing coloured marbles as given below:
+\begin{table}[h]
+\centering
+\caption{}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Box & Red & White & Black\\
+\hline
+A & 1&6&3\\
+B&6&2&2\\
+C&8&1&1\\
+D&0&6&4\\
+\hline
+\end{tabular}
+\end{table}
+one of the box has been selected at random and a single marble is drawn from it.If the marble is red.What is the probability that it was drawn from box A?Box B?Box C?
+\\
+\textbf{Solution:}
+Here we are having 4 boxes with 10 balls each.There is a equal likelihood of selecting  four boxes
+\\
+\begin{table}[h]
+\centering
+\caption{}
+\begin{tabular}{|c|c|}
+\hline
+R&Event that Red marble is drawn\\
+\hline
+A&Event that marble is drawn from Box A\\
+\hline
+B&Event that marble is drawn from Box B\\
+\hline
+C&Event that marble is drawn from Box C\\
+\hline
+D&Event that marble is drawn from Box D\\
+\hline
+\end{tabular}
+\end{table}
+Suppose
+$P(A)$: probability that  Box A is selected  $=\frac{1}{
+4}$
+\\We are having 1 red balls in box A,so probability of getting the red ball from box A is given by
+
+$P(R/A)$: probability that Red marble is selected given it is from Box A $=\frac{1}{10}$
+\begin{flushleft}
+$P(B)$: probability that  Box B is selected  $=\frac{1}{
+4}$
+\\We are having 6 red balls in box B,so probability of getting the red ball from box B is given by
+\\$P(R/B)$: probability that Red marble is selected from Box B $=\frac{6}{10}$
+
+$P(C)$: probability that  Box C is selected  $=\frac{1}{
+4}$
+\\We are having 8 red balls in box C,so probability of getting the red ball from box C is given by
+\\$P(R/C)$: probability that Red marble is selected from Box C $=\frac{8}{10}$
+
+$P(D)$: probability that  Box D is selected  $=\frac{1}{
+4}$.
+\\We are having 0 red balls in box D,so probability of getting the red ball from box D is given by
+
+$P(R/D)$: probability that Red marble is selected from Box D $=0$
+\\
+Since red balls are in all the three boxes.The probability that selected ball is red is given by
+\newpage
+$P(R)$:Probability of getting a Red marble
+\end{flushleft}
+\begin{align*}
+&={P(A)P(R/A)+P(B)P(R/B)}\\
+&\quad +{P(C)P(R/C)+P(D)P(R/D)}\\
+&=\frac{1}{4}\times\frac{1}{10}+\frac{1}{4}\times\frac{6}{10}+\frac{1}{4}\times\frac{8}{10}\\
+&=\frac{1}{4}(\frac{1}{10}+\frac{6}{10}+\frac{8}{10})\\
+&=\frac{1}{4}\times\frac{3}{2}
+\end{align*}
+
+\section{\title{\textbf{Part A}}}
+
+$P(A/R)$:probability that marble is drawn from box A given it is Red marble.By using bayes theorem
+\begin{align*}
+&=\frac{{P(R/A)}.\text{P(A)}}{{P(R)}}
+\\
+&=\frac{\frac{1}{10}\times\frac{1}{4}}{\frac{1}{4}\times\frac{3}{2}}
+\\
+&=\frac{1}{15}
+\\
+\end{align*}
+
+\section{\title{\textbf{Part B}}}
+
+$P(B/R)$:probability that marble is drawn from box B given it is Red marble.By using bayes theorem
+\begin{align*}
+    \\
+&=\frac{{P(R/B)}.{P(B)}}{{P(R)}}
+\\
+&=\frac{\frac{6}{10}\times\frac{1}{4}}{\frac{1}{4}\times\frac{3}{2}}
+\\
+&=\frac{2}{5}
+\\
+\end{align*}
+
+\section{\title{\textbf{part C}}}
+
+$P(C/R)$:probability that marble is drawn from box C given it is Red marble.By using bayes theorem
+\begin{align*}
+    \\
+&=\frac{{P(R/C)}.{P(C)}}{{P(R)}}
+\\
+&=\frac{\frac{8}{10}\times\frac{1}{4}}{\frac{1}{4}\times\frac{3}{2}}
+\\
+&=\frac{8}{15}
+\end{align*}
+
+\end{document}
