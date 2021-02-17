@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+
+\title{Assignment5-Probability and Random variables}
+\author{Aravind A Anil}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Problem-Statement:}A die is thrown again and again until three sixes are obtained.Find the probability of obtaining third six in the sixth throw of the die
+\\\textbf{Solution:}Here we need to find the probability of obtaining third six in the sixth throw of die
+\\P(getting 3rd six in 6th throw)
+\begin{align*}
+\\&=\text{P(getting 2 sixes in 5 throws)}\\
+&\quad\times\text{P(getting head in sixth throw)}
+\\&=\text{P(getting 2 sixes in 5 throws)}\times \frac{1}{6}
+\end{align*}
+\textbf{Calculating P(getting 2 sixes in 5 throws)}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        variables & Description\\
+        \hline
+        X& number of sixes in 5 throws\\
+        \hline
+        p&probability of getting six\\
+        \hline
+        q&probability of not getting six\\
+        \hline
+        n&number of times die is thrown\\
+        \hline
+        \end{tabular}
+        \label{tab:my_label}
+\end{table}
+\\n=5, $\text{p}=\frac{1}{6}$ and $\text{q}=\frac{5}{6}$
+\\Here checking whether six is obtained or not in a given throw is a 
+Bernoulli's trail.
+\\Since we are throwing the die 5 times 
+\\X has a Binomial Distribution
+\\P(X=x)=$^{n}C_xp^{x}q^{n-x}$
+\\We need to find P(getting 2 sixes in 5 throws)
+\begin{align*}
+    P(X=2)&=^{5}C_2\Big(\frac{1}{6}\Big)^{2}\Big(\frac{5}{6}\Big)^{3}\\&=\frac{5\times4}{2}\times\Big(\frac{1}{6}\Big)^{2}\times\Big(\frac{5}{6}\Big)^{3}
+    \\&=10\times5^3\times\Big(\frac{1}{6}\Big)^{5}\\
+    &=\frac{10\times5^{3}}{6^{5}}
+\end{align*}
+Hence the required probability is,
+\begin{align*}
+    &=P(X=2)\times\frac{1}{6}\\
+    &=\frac{10\times5^{3}}{6^{6}}\times\frac{1}{6}\\
+    &=\frac{10\times5^{3}}{6^{6}}\\
+    &=\frac{10\times125}{46656}\\
+    &=\frac{625}{23328}\\
+    &=.0267
+\end{align*}
+
+
+
+
+\end{document}
