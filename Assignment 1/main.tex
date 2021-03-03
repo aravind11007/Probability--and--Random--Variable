@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Assignment 1-probability and Random Variable}
+\author{Aravind-BM19MTECH11007}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\textbf{Problem Statement:} Suppose that 90\% of people are right handed.What is the probability that at most 6 of a random sample of 10 are right-handed?
+\\
+\\
+
+\textbf{Solution:} Let X be the number of right-handed people
+\\
+n=10(number of sample)
+\\
+p=9/10(probability of right handed people)
+q=1/10(probability of left handed people)
+\\
+\\
+From bernoulli's distribution we know that,
+\begin{equation}
+    P(X=r)=^{n}C_rp^{r}q^{n-r}
+\end{equation}
+\begin{equation}
+\begin{split}
+    P(X\le6) & =1-P(X>6)
+             \\ &  =1-[P(X=7)+P(X=8)+P(X=9)+P(X=10)]
+            \\ &    =1-[^1^0C_7\Bigg(\frac{9}{10}\Bigg)^{7}\Bigg(\frac{1}{10}\Bigg)^3+^1^0C_8\Bigg(\frac{9}{10}\Bigg)^8\Bigg(\frac{1}{10}\Bigg)^2\\
+            &\quad+^1^0C_9\Bigg(\frac{9}{10}\Bigg)^9\Bigg(\frac{1}{10}\Bigg)+^1^0C_1_0\Bigg(\frac{9}{10}\Bigg)^{10}]
+            \\&
+            =1-9^7/10^1^0[^{10}C_7+^{10}C_8\times9+
+            ^{10}C_9\times9^2+^{10}C_1_0\times9^3]
+            \\&
+            =1-9^7/10^1^0\Bigg[\frac{10\times9\times8}{3\times2\times1}+\frac{10\times9\times9}{2}+10\times81+729\Bigg]
+            \\&
+            =1-9^7/10^1^0[120+405+810+729]
+            \\&
+            =1-\Bigg(\frac{9^7*2064}{10^1^0}\Bigg)
+            \\ &
+            =.0128
+\end{split}
+\end{equation}
+\end{document}
