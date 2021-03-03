@@ -1,0 +1,36 @@
+\documentclass[12pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{setspace}
+
+\title{Assignment 2-probability and Random Variable}
+\author{Aravind--BM19MTECH11007}
+\date{\today}
+\onehalfspacing
+
+\begin{document}
+
+\maketitle
+
+
+\textbf{Problem statement:} The probability that student is not a swimmer is 1/5. Then the probability that out of five students, four are swimmers is?
+\begin{enumerate}[label=\alph*)]
+    \item $^{5}C_4(4/5)^{4}(1/5)$
+    \item $(4/5)^4(1/5)$
+    \item $^{5}C_1(4/5)^4(1/5)$
+    \item None of the above
+\end{enumerate}
+
+\textbf{Solution}: Let X be the number of swimmers.
+
+$p=\frac{4}{5}$ (probability that student is swimmer) \&
+$q=\frac{1}{5}$ (probability that student is not swimmer),
+$n=5$ (number of students).
+From Bernoulli's distribution we know that, 
+$$P(X=r)=^{n}C_rp^{r}q^{n-r}$$.
+Here, $p=\frac{4}{5},q=\frac{1}{5}, n=5$ and $r=4$. Therefore, $P(4)=^{5}C_4(\frac{4}{5})^{4}(\frac{1}{5})$.\\
+Hence the answer is option \textbf{(a)}.
+\end{document}
