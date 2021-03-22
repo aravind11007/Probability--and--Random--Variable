@@ -1,0 +1,48 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumerate}
+\title{Assignment8}
+\author{Aravind A Anil}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\begin{flushleft}
+\textbf{Problem Statement($6.25$):}If $Pr(A)=.8$,$Pr(B)=.5$ and $Pr(B|A)=.4$,Find
+\end{flushleft}
+\begin{enumerate}[i]
+    \item $Pr(A\cap B)$
+    \item$Pr(A|B)$
+    \item$Pr(A\cup B)$\\[5pt]
+\end{enumerate}
+\textbf{Solution:}$P(A)=.8$,$P(B)=.5$,\\$P(B|A)=.4$
+\begin{enumerate}
+    \item{$P(A\cap B)$}\\
+we know that,
+\begin{align*}
+P(B|A)&=\frac{P(B\cap A)}{P(A)}\\
+.4&=\frac{P(A\cap B)}{.8}\\
+P(A\cap B)&=.4\times.8\\
+\mathbf{P(A\cap B)}&=.32
+\end{align*}
+   \item{$P(A|B)$}\\
+we know that,
+\begin{align*}
+    P(A|B)&=\frac{P(B|A)\times P(A)}{P(B)}\\
+    &=\frac{.4\times.8}{.5}\\
+    &=.64
+\end{align*}
+   \item{$P(A \cup B)$}\\
+We know that,
+\begin{align*}
+    P(A\cup B)&=P(A)+P(B)-P(A\cap B)\\
+    &=.8+.5-.32\\
+    &=.98
+\end{align*}
+\end{enumerate}
+\end{document}
