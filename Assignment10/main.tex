@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage[inline]{enumitem}   
+\title{Assignment10}
+\author{Aravind A Anil}
+\date{\today}
+\begin{document}
+\maketitle
+
+\textbf{Problem Statement:}Two independent random variables X and Y
+are uniformly distributed in the interval [-1,1].The probability that max [X,Y] is less than $\frac{1}{2}$ is\\[5pt]
+\begin{enumerate*}[label=\alph*)]
+    \item $\frac{3}{4}$\hspace{.5cm}
+    \item $\frac{9}{16}$\hspace{.5cm}
+    \item $\frac{1}{4}$\hspace{.5cm}
+    \item $\frac{2}{3}$\hspace{.5cm}
+\end{enumerate*}\\[5pt]
+X and Y are having uniform distribution\\
+\begin{equation*}
+  f_{X}(x)=
+\begin{cases}
+\frac{1}{2} & \text{if} -1<X<1\\
+0 & \text{otherwise}
+\end{cases}
+\end{equation*}\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=8cm]{uniformx.png}
+    \caption{PDF of X}
+    \label{fig:my_label}
+\end{figure}
+\begin{equation*}
+     f_{Y}(y)=
+     \begin{cases}
+     \frac{1}{2} & \text{if} -1<Y<1\\
+     0 & \text{otherwise}
+     \end{cases}
+\end{equation*}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=8cm]{uniformy.png}
+    \caption{PDF OF Y}
+\end{figure}
+\newpage
+$Pr\Big(\text{max(X,Y)}\Big)<\frac{1}{2}$ implies that\\[5pt]
+$X<\frac{1}{2}$ \& $Y<\frac{1}{2}$\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=8cm]{uniformxx.png}
+    \caption{X$<\frac{1}{2}$}
+\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=8cm]{uniformyy.png}
+    \caption{Y$<\frac{1}{2}$}
+    \label{fig:my_label}
+\end{figure}
+\newpage
+Since X and Y are independent
+\begin{align*}
+    Pr\Bigg(X<\frac{1}{2},&Y<\frac{1}{2}\Bigg)\\
+    &=Pr\Big(X<\frac{1}{2}\Big)\timesPr\Big(Y<\frac{1}{2}\Big)\\
+    &=\text{area}\Big(X<\frac{1}{2}\Big)\times \text{area}\Big(Y<\frac{1}{2}\Big)\\
+   &=\frac{3}{2}\times\frac{1}{2}\times\frac{3}{2}\times\frac{1}{2}\\
+    &=\frac{9}{16}
+\end{align*}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=9cm]{simulated vs theoretical.png}
+    \caption{simulated vs theoretical}
+    \label{fig:my_label}
+\end{figure}
+\end{document}
