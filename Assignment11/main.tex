@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage[inline]{enumitem}   
+\title{Assignment11}
+\author{Aravind A Anil}
+\date{\today}
+\begin{document}
+\maketitle
+\textbf{Problem Statement(Gate31):}An experiment consists of two papers.paper1 and paper2.The probability of failing in paper 1 is .3 and that in paper 2 is .2.Given that a student has failed in paper 2,the probability of failing in paper 1 is .6.The probability of student failing in both is\\
+\begin{enumerate*}[label=\Alph*)]
+\item .5 \hspace{.5cm}
+\item .18 \hspace{.5cm}
+\item .12 \hspace{.5cm}
+\item .06 \hspace{.5cm}
+\end{enumerate*}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+         &Description  \\
+         \hline
+         0&failure\\
+         \hline
+         1&success\\
+         \hline
+         X&Paper 1\\
+         \hline
+         Y&Paper 2\\
+         \hline
+    \end{tabular}
+    \caption{Description}
+\end{table}
+\\Given,\\
+$Pr(X=0)=.3$,$Pr(Y=0)=.2$\\
+$Pr(X=0|Y=0)=.6$\\
+Using base's theorem we know that,\\
+\begin{align*}
+ Pr(X=0|Y=0)&=\frac{Pr(X=0,Y=0)}{Pr(Y=0)}\\ 
+ Pr(X=0,Y=0)&=Pr(X=0|Y=0)\times Pr(Y=0)\\
+ &=.6\times.2\\
+ &=.12
+\end{align*}
+\textbf{Option C is correct answer}
+\\
+\end{document}
